@@ -102,14 +102,6 @@ h1{
     text-align: center;
 }
 
-.pesquisa{
-    width: 300px;
-    height: 60px;
-    float: left;
-    box-sizing: border-box;
-    margin-left: 200px;
-}
-
 .btn1, .btn2{
     width: 200px;
     height: 60px;
@@ -127,6 +119,40 @@ h1{
 
 .btn2{
     margin-bottom: 40px;
+}
+
+/* Configurando o formulário de Pesquisa */
+
+.formPesquisa{
+    background-color: #fff;
+    float: left;
+    width: 300px;
+    height: 60px;
+    margin-left: 200px;
+    border: 1px solid;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.formPesquisa input[type='text']{
+    float: left;
+    width: 90%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    box-sizing: border-box;
+    padding-left: 10px;
+    outline: none;
+}
+
+.formPesquisa button{
+  float: left;
+  width: 10%;
+  height: 100%;
+  border: none;
+  box-sizing: border-box;
+  padding-left: 15px;
+  background: transparent;
 }
 
 /* Configuração das Tabelas */
@@ -217,6 +243,7 @@ button:hover{
     background-color: rgb(30, 136, 229);
     color: #fff;
     transition: .7s;
+    border-radius: 6px;
 }
 
 
