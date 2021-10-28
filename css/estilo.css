@@ -136,7 +136,7 @@ h1{
 
 .formPesquisa input[type='text']{
     float: left;
-    width: 90%;
+    width: 85%;
     height: 100%;
     border: none;
     background: transparent;
@@ -146,13 +146,13 @@ h1{
 }
 
 .formPesquisa button{
-  float: left;
-  width: 10%;
-  height: 100%;
-  border: none;
-  box-sizing: border-box;
-  padding-left: 15px;
-  background: transparent;
+    float: left;
+    width: 15%;
+    height: 100%;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: transparent;
 }
 
 /* Configuração das Tabelas */
@@ -214,6 +214,7 @@ p{
 /* Configuração do Rodapé */
 
 footer{
+    max-width: 970px;
     text-align: center;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -245,8 +246,6 @@ button:hover{
     transition: .7s;
     border-radius: 6px;
 }
-
-
 
 
 
