@@ -90,3 +90,50 @@ h1{
     margin-left: 40px;
     padding: 40px;
 }
+
+.botoes{
+    max-width: 950px;
+}
+
+.pesquisa{
+    width: 300px;
+    height: 60px;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 200px;
+}
+
+.btn1, .btn2{
+    width: 200px;
+    height: 60px;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+
+.btn1{
+    margin-left: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
