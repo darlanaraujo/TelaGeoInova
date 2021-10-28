@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     font-family: 'play';
+    
 }
 
 .principal{
@@ -33,6 +34,7 @@
 figure{
     text-align: center;
     margin-top: 50px;
+    transition: 1s;
 }
 
 ul li{
@@ -50,19 +52,13 @@ ul li{
     transition: .7s;
 }
 
-ul li:hover{
-    background-color: rgb(30, 136, 229);
-    color: #fff;
-    transition: .7s;
-}
+
 
 a{
     text-decoration: none;
     color: rgb(62, 79, 89);
 }
-a:hover{
-    color: #fff;
-}
+
 
 .menu1{
     margin-top: 50px;
@@ -82,6 +78,7 @@ a:hover{
     width: 80%;
     box-sizing: border-box;
     float: left;
+    height: 100vh;
     
 }
 
@@ -193,9 +190,34 @@ p{
 footer{
     text-align: center;
     margin-top: 40px;
+    margin-bottom: 40px;
     color: rgb(143,161,170);
+    
 }
 
+/* Configurações de Efeito */
+
+img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+}
+
+ul li:hover{
+    background-color: rgb(30, 136, 229);
+    color: #fff;
+    transition: .7s; 
+}
+
+a:hover{
+    color: #fff;
+}
+
+button:hover{
+    background-color: rgb(30, 136, 229);
+    color: #fff;
+    transition: .7s;
+}
 
 
 
