@@ -1,0 +1,92 @@
+/* Configurações Globais */
+
+@font-face{
+    font-family: 'play';
+    src: url(../fontes/Play-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'play';
+}
+
+.principal{
+    box-sizing: border-box;
+    
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(241, 241, 241);
+}
+
+/* Configurações do cabeçalho */
+
+.cabecalho{
+    background-color: #fff;
+    width: 220px;
+    height: 100vh;
+    box-shadow: 1px 2px 10px black;
+    box-sizing: border-box;
+    float: left;
+}
+
+figure{
+    text-align: center;
+    margin-top: 50px;
+}
+
+ul li{
+    list-style-type: none;
+    background-color: rgb(239, 239, 239);
+    color: rgb(62, 79, 89);
+    width: 100%;
+    height: 50px;
+    font-size: 0.9em;
+    box-sizing: border-box;
+    padding-left: 40px;
+    line-height: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .7s;
+}
+
+ul li:hover{
+    background-color: rgb(30, 136, 229);
+    color: #fff;
+    transition: .7s;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(62, 79, 89);
+}
+a:hover{
+    color: #fff;
+}
+
+.menu1{
+    margin-top: 50px;
+}
+
+.menu2{
+    margin-top: 30px;
+}
+
+.menu3{
+    margin-top: 80px;
+}
+
+/* Configurações do Conteúdo */
+
+.conteudo{
+    width: 80%;
+    box-sizing: border-box;
+    float: left;
+    
+}
+
+h1{
+    font-size: 2em;
+    margin-left: 40px;
+    padding: 40px;
+}
