@@ -93,8 +93,6 @@ h1{
     
 }
 
-/* Configuração dos botões */
-
 .botoes, .lista{
     max-width: 950px;
     width: 100%;
@@ -132,68 +130,48 @@ h1{
     margin-bottom: 40px;
 }
 
-/* Configuração das Tabelas */
-
 .lista{
     clear: both;
     width: 100%;
     margin-left: 40px;
     background-color: #fff;
     box-sizing: border-box;
-    padding-bottom: 90px;
+    padding: 10px;
     color: rgb(143,161,170);
     border: 1px solid;
     border-radius: 5px;
-    font-size: .9em
 }
 
-.tb1, .tb2, .tb3, .tb4{
-    border-radius: 5px;
-    border: 1px solid;
-    width: 100%;
-    height: 50px;
+.linha1, .linha2{
     box-sizing: border-box;
+    width: 100%;
+    border: 1px solid;
+    height: 50px;
+    line-height: 50px;
 }
 
-.tb2, .tb3, .tb4{
+.linha2{
     height: 120px;
-}
-
-.c1{
-    padding-left: 20px;
-    width: 100px;
-    
-}
-
-.c2{
-   width: 100px;
-
-}
-
-.c3{
-   width: 300px;
-}
-
-.c4{
-    width: 150px;
-    text-align: ;
+    line-height: 120px;
 }
 
 p{
-    margin-bottom: 10px;
+    float: left;
+    margin-left: 40px;
 }
 
-.c5{
-    width: 200px;
-    text-align: center;
+.p1{
+    margin-left: 20px;
 }
 
-/* Configuração do Rodapé */
+.p4{
+    margin-left: 280px;
+    
+}
 
-footer{
-    text-align: center;
-    margin-top: 40px;
-    color: rgb(143,161,170);
+.p5{
+    margin-left: 90px;
+    
 }
 
 
