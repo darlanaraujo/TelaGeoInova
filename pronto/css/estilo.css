@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     font-family: 'play';
+    
 }
 
 .principal{
@@ -33,6 +34,7 @@
 figure{
     text-align: center;
     margin-top: 50px;
+    transition: 1s;
 }
 
 ul li{
@@ -50,18 +52,9 @@ ul li{
     transition: .7s;
 }
 
-ul li:hover{
-    background-color: rgb(30, 136, 229);
-    color: #fff;
-    transition: .7s;
-}
-
 a{
     text-decoration: none;
     color: rgb(62, 79, 89);
-}
-a:hover{
-    color: #fff;
 }
 
 .menu1{
@@ -82,7 +75,7 @@ a:hover{
     width: 80%;
     box-sizing: border-box;
     float: left;
-    
+    height: 100vh;
 }
 
 h1{
@@ -93,6 +86,8 @@ h1{
     
 }
 
+/* Configuração dos botões */
+
 .botoes, .lista{
     max-width: 950px;
     width: 100%;
@@ -101,14 +96,6 @@ h1{
 
 .botoes{
     text-align: center;
-}
-
-.pesquisa{
-    width: 300px;
-    height: 60px;
-    float: left;
-    box-sizing: border-box;
-    margin-left: 200px;
 }
 
 .btn1, .btn2{
@@ -130,52 +117,131 @@ h1{
     margin-bottom: 40px;
 }
 
+/* Configurando o formulário de Pesquisa */
+
+.formPesquisa{
+    background-color: #fff;
+    float: left;
+    width: 300px;
+    height: 60px;
+    margin-left: 200px;
+    border: 1px solid;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.formPesquisa input[type='text']{
+    float: left;
+    width: 85%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    box-sizing: border-box;
+    padding-left: 10px;
+    outline: none;
+}
+
+.formPesquisa button{
+    float: left;
+    width: 15%;
+    height: 100%;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: transparent;
+}
+
+/* Configuração das Tabelas */
+
 .lista{
     clear: both;
     width: 100%;
     margin-left: 40px;
     background-color: #fff;
     box-sizing: border-box;
-    padding: 10px;
+    padding-bottom: 90px;
     color: rgb(143,161,170);
     border: 1px solid;
     border-radius: 5px;
+    font-size: .9em
 }
 
-.linha1, .linha2{
-    box-sizing: border-box;
-    width: 100%;
+.tb1, .tb2, .tb3, .tb4{
+    border-radius: 5px;
     border: 1px solid;
+    width: 100%;
     height: 50px;
-    line-height: 50px;
+    box-sizing: border-box;
 }
 
-.linha2{
+.tb2, .tb3, .tb4{
     height: 120px;
-    line-height: 120px;
+}
+
+.c1{
+    padding-left: 20px;
+    width: 100px;
+    
+}
+
+.c2{
+   width: 100px;
+
+}
+
+.c3{
+   width: 300px;
+}
+
+.c4{
+    width: 150px;
+    text-align: ;
 }
 
 p{
-    float: left;
-    margin-left: 40px;
+    margin-bottom: 10px;
 }
 
-.p1{
-    margin-left: 20px;
+.c5{
+    width: 200px;
+    text-align: center;
 }
 
-.p4{
-    margin-left: 280px;
+/* Configuração do Rodapé */
+
+footer{
+    max-width: 970px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: rgb(143,161,170);
     
 }
 
-.p5{
-    margin-left: 90px;
-    
+/* Configurações de Efeito */
+
+img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
 }
 
+ul li:hover{
+    background-color: rgb(30, 136, 229);
+    color: #fff;
+    transition: .7s; 
+}
 
+a:hover{
+    color: #fff;
+}
 
+button:hover{
+    background-color: rgb(30, 136, 229);
+    color: #fff;
+    transition: .7s;
+    border-radius: 6px;
+}
 
 
 
