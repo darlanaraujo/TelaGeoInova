@@ -5,39 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Folha de estilo-->
+    <!--Folha de Estilo-->
     <link rel="stylesheet" href="css/estilo.css">
 
-    <!--Importação de imagens Fontawesome-->
+    <!---->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
-   
-
-    <title>Layout Sistema Sulake v2.0</title>
+    <title>Projeto Tela Sulake</title>
 </head>
 <body>
-    <div class="container">
+    
+    <div class="principal">
         <header>
-            <figure>
-                <img src="imagens/logo_sulake.png" alt="[Logo Empresa Sulake]" title="Logo Sulake">
-            </figure>
-            <nav>
-                <input type="checkbox" name="" id="check">
-                <label for="check" class="btnMenu">
-                    <i class="fas fa-bars"></i>
-                </label>
-                <ul>
+            <section class="cabecalho">
+                <figure>
+                    <img src="imagens/logo_sulake.png" alt="[Logo Empresa Sulake]" title="Logo Sulake">
+                </figure>
+
+                <ul class="menu1">
                     <li><i class="fas fa-plus"></i><a href="#">  Nova Solicitação</a></li>
-                    <li class="menu2"><i class="fas fa-envelope"></i><a href="#">  Solicitações</a></li>
+                </ul>
+
+                <ul class="menu2">
+                    <li><i class="fas fa-envelope"></i><a href="#">  Solicitações</a></li>
                     <li><i class="fas fa-file"></i><a href="#">  Ordem de Serviço</a></li>
                     <li><i class="fas fa-comment-dollar"></i><a href="#">  Orçamentos</a></li>
                     <li><i class="fas fa-cog"></i><a href="#">  Configurações</a></li>
-                    <li class="menu6"><i class="fas fa-sign-out-alt"></i><a href="#">  Sair</a></li>
                 </ul>
-            </nav>
-        </header>
-        <div class="conteudo">
-            <section>
+
+                <ul class="menu3">
+                    <li><i class="fas fa-sign-out-alt"></i><a href="#">  Sair</a></li>
+                </ul>
+            </section>
+
+            <section class="conteudo">
                 <h1>Solicitações</h1>
 
                 <div class="botoes">
@@ -83,7 +84,7 @@
                     </table>
 
                     <table class="tb3">
-                        <tr class="linha3">
+                        <tr class="linha2">
                             <td class="c1">16/12/2020</td>
                             <td class="c2">#0762</td>
                             <td class="c3">Lorem ipsum dolor sit amet consectetur.</td>
@@ -93,7 +94,7 @@
                     </table>
 
                     <table class="tb4">
-                        <tr class="linha4">
+                        <tr class="linha2">
                             <td class="c1">16/12/2020</td>
                             <td class="c2">#0762</td>
                             <td class="c3">Lorem ipsum dolor sit amet consectetur.</td>
@@ -109,9 +110,11 @@
 
                 </section>
 
-                <footer></footer>
+                <footer>C 2021 Dev SA - Desenvolvido por Darlan Araujo</footer>
+
             </section>
-        </div>
+        </header>
     </div>
+
 </body>
 </html>

@@ -9,88 +9,257 @@
     margin: 0;
     padding: 0;
     font-family: 'play';
-    
-}
-
-.principal{
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
     box-sizing: border-box;
-    
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(241, 241, 241);
 }
 
-/* Configurações do cabeçalho */
+.container{
+    background-color: rgb(241,241,241);
+    height: 100vh;
+    
+}
 
-.cabecalho{
+/* Configurações do Cabeçalho*/
+header{
     background-color: #fff;
-    width: 220px;
+    box-shadow: 1px 2px 10px;
+    border: 1px solid;
+    width: 20%;
     height: 100vh;
-    box-shadow: 1px 2px 10px black;
-    box-sizing: border-box;
     float: left;
+    transition: 2s;
 }
 
 figure{
     text-align: center;
-    margin-top: 50px;
+   
+}
+
+img{
+    box-sizing: border-box;
+    padding-top: 40px;
     transition: 1s;
 }
 
-ul li{
-    list-style-type: none;
-    background-color: rgb(239, 239, 239);
-    color: rgb(62, 79, 89);
-    width: 100%;
-    height: 50px;
-    font-size: 0.9em;
+nav{
     box-sizing: border-box;
-    padding-left: 40px;
+    padding-top: 70px;
+    width: 100%
+}
+
+.btnMenu, #check{
+    display: none;
+}
+
+ul li{
+    box-sizing: border-box;
+    background-color: rgb(239,239,239);
+    height: 50px;
+    margin-top: 5px;
     line-height: 50px;
-    margin-top: 10px;
+    color: rgb(62, 79, 89);
     cursor: pointer;
-    transition: .7s;
+}
+
+i{
+    box-sizing: border-box;
+    padding-left: 20%;
 }
 
 a{
-    text-decoration: none;
+    padding-left: 10px;
     color: rgb(62, 79, 89);
 }
 
-.menu1{
-    margin-top: 50px;
-}
-
 .menu2{
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
-.menu3{
-    margin-top: 80px;
+.menu6{
+    margin-top: 120px;
 }
 
-/* Configurações do Conteúdo */
+/*Comando de efeitos*/
 
+img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+nav ul li:hover{
+    background-color: rgb(30,136,229);
+    color: #fff;
+    cursor: pointer;
+    transition: 1s;
+}
+
+a:hover{
+    color: #fff;
+}
+
+
+/* Comando responsivo Cabeçalho*/
+
+@media (max-width: 1200px){
+    header{
+        width: 100%;
+        height: 120px;
+        transition: 2s;
+    }
+    
+    nav{
+        padding-top: 30px;
+        font-size: .9em;
+        
+    }
+    
+    figure{
+        padding-left: 30px;
+
+    }
+    
+    img{
+        padding-top: 10px;
+        float: left;
+    }
+
+    nav ul li{
+        box-sizing: border-box;
+        display: inline-block;
+        float: right;
+        margin-right: 20px;
+        transition: 2s;
+        text-align: center;
+        height: 3px;
+        
+    }
+    
+    i{
+        box-sizing: border-box;
+        padding-left: 10px;
+    }
+
+    a{
+        padding-left: 5px;
+        padding-right: 10px;
+    }
+    
+    .menu2{
+        margin-top: 5px;
+    }
+
+    .menu6{
+        margin-top: 5px;
+    }
+    
+    /*Comandos de efeitos*/
+    
+    nav ul li:hover{
+        height: 50px;
+        background-color: rgba(30, 136, 229);
+        border-radius: 4px;
+        color: #fff;
+        transform: scale(1.1);
+    }
+
+    a:hover{
+        color: #fff;
+    }
+    
+    a.active{
+        background: blue;
+    }
+    
+}
+
+@media (max-width: 1010px){
+    nav ul li{
+        font-size: .7em
+    }
+}
+
+@media (max-width: 858px){
+    .btnMenu{
+        display: block;
+        font-size: 25px;
+        float: right;
+        margin-right: 40px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(239,239,239);
+        top: 120px;
+        left: -100%;
+        transition: all 1s;
+        font-size: 2em;
+        
+    }
+    
+    nav ul li{
+        display: block;
+        width: 100%;
+        margin-top: 15px;
+        padding-left: 30px;
+        height: 50px;
+        line-height: 50px;
+        margin-right: 0;
+        
+    }
+    
+    /*Comando de efeitos*/
+    nav ul li:hover{
+        background-color: rgb(30,136,229);
+        color: #fff;
+        cursor: pointer;
+        transition: 1s;
+        
+        border-radius: 0;
+    }
+
+    a:hover{
+        color: #fff;
+    }
+    
+    /*Comando que verifica se o check foi selecionado*/
+    #check:checked ~ ul{
+        left: 0;
+    }
+   
+}
+
+/*Configurações do conteúdo*/
 .conteudo{
-    width: 80%;
     box-sizing: border-box;
     float: left;
-    height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    
 }
 
 h1{
     font-size: 2em;
-    margin-left: 40px;
-    margin-top: 40px;
+    padding-top: 50px;
+    padding-left: 50px;
     margin-bottom: 40px;
-    
 }
 
 /* Configuração dos botões */
 
 .botoes, .lista{
-    max-width: 950px;
+    box-sizing: border-box;
+    margin-left: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
     width: 100%;
+    height: 100px;
     
 }
 
@@ -98,22 +267,24 @@ h1{
     text-align: center;
 }
 
+
 .btn1, .btn2{
-    width: 200px;
+    width: 20%;
     height: 60px;
     color: rgb(143,161,170);
     box-sizing: border-box;
-    margin-left: 10px;
+    margin-left: 0px;
     list-style-type: none;
     cursor: pointer;
     float: left;
 }
 
 .btn1{
-    margin-left: 40px;
+    margin-left: 0px;
 }
 
 .btn2{
+    margin-left: 30px;
     margin-bottom: 40px;
 }
 
@@ -122,9 +293,9 @@ h1{
 .formPesquisa{
     background-color: #fff;
     float: left;
-    width: 300px;
+    width: 32%;
     height: 60px;
-    margin-left: 200px;
+    margin-left: 160px;
     border: 1px solid;
     border-radius: 8px;
     box-sizing: border-box;
@@ -207,112 +378,13 @@ p{
     text-align: center;
 }
 
-/* Configuração do Rodapé */
-
-footer{
-    max-width: 970px;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    color: rgb(143,161,170);
-    
-}
-
-/* Configurações de Efeito */
-
-img:hover{
-    transform: scale(1.1);
-    transition: 1s;
-    cursor: pointer;
-}
-
-ul li:hover{
-    background-color: rgb(30, 136, 229);
-    color: #fff;
-    transition: .7s; 
-}
-
-a:hover{
-    color: #fff;
-}
-
-button:hover{
-    background-color: rgb(30, 136, 229);
-    color: #fff;
-    transition: .7s;
-    border-radius: 6px;
-}
-
-
-/* Comandos Responsivos */
+/*Comandos Responsivo Cabeçalho*/
 
 @media (max-width: 1200px){
-    .cabecalho{
-        background-color: #fff;
-        width: 100%;
-        height: 100px;
-        box-shadow: 1px 2px 10px black;
-        box-sizing: border-box;
-        transition: 1.5s;
-    }
-    
-    figure{
-        margin: 0;
-    }
-    
-    img{
-        box-sizing: border-box;
-        margin-top: 10px;
-        margin-left: 20px;
-        text-align: left;
-        transition: 1s;
-        float: left;
-        height: 80px;
-    }
-    
-    ul li{
-        display: inline list-item;
-        margin: 0 auto;
-        padding: 10px;
-        margin-right: 10px;
-        
-    }
-    
-    .menu1, .menu2, .menu3{
-        margin-top: 30px;
-        float: left;
-        
-    }
-    
-    .menu1{
-        margin-left: 200px;
-    }
-
-    
     .conteudo{
         width: 100%;
-        margin: 0 auto;
-    }
-
-}
-
-@media (max-width: 1100px){
-    .menu1{
-        margin-left: 90px;
-        transition: 1.5s;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

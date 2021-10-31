@@ -1,0 +1,319 @@
+/* Configurações Globais */
+
+@font-face{
+    font-family: 'play';
+    src: url(../fontes/Play-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'play';
+    
+}
+
+.principal{
+    box-sizing: border-box;
+    
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(241, 241, 241);
+}
+
+/* Configurações do cabeçalho */
+
+.cabecalho{
+    background-color: #fff;
+    width: 220px;
+    height: 100vh;
+    box-shadow: 1px 2px 10px black;
+    box-sizing: border-box;
+    float: left;
+}
+
+figure{
+    text-align: center;
+    margin-top: 50px;
+    transition: 1s;
+}
+
+ul li{
+    list-style-type: none;
+    background-color: rgb(239, 239, 239);
+    color: rgb(62, 79, 89);
+    width: 100%;
+    height: 50px;
+    font-size: 0.9em;
+    box-sizing: border-box;
+    padding-left: 40px;
+    line-height: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .7s;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(62, 79, 89);
+}
+
+.menu1{
+    margin-top: 50px;
+}
+
+.menu2{
+    margin-top: 30px;
+}
+
+.menu3{
+    margin-top: 80px;
+}
+
+/* Configurações do Conteúdo */
+
+.conteudo{
+    width: 80%;
+    box-sizing: border-box;
+    float: left;
+    height: 100vh;
+}
+
+h1{
+    font-size: 2em;
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+
+/* Configuração dos botões */
+
+.botoes, .lista{
+    max-width: 950px;
+    width: 100%;
+    
+}
+
+.botoes{
+    text-align: center;
+}
+
+.btn1, .btn2{
+    width: 200px;
+    height: 60px;
+    color: rgb(143,161,170);
+    box-sizing: border-box;
+    margin-left: 10px;
+    list-style-type: none;
+    cursor: pointer;
+    float: left;
+}
+
+.btn1{
+    margin-left: 40px;
+}
+
+.btn2{
+    margin-bottom: 40px;
+}
+
+/* Configurando o formulário de Pesquisa */
+
+.formPesquisa{
+    background-color: #fff;
+    float: left;
+    width: 300px;
+    height: 60px;
+    margin-left: 200px;
+    border: 1px solid;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.formPesquisa input[type='text']{
+    float: left;
+    width: 85%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    box-sizing: border-box;
+    padding-left: 10px;
+    outline: none;
+}
+
+.formPesquisa button{
+    float: left;
+    width: 15%;
+    height: 100%;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: transparent;
+}
+
+/* Configuração das Tabelas */
+
+.lista{
+    clear: both;
+    width: 100%;
+    margin-left: 40px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding-bottom: 90px;
+    color: rgb(143,161,170);
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: .9em
+}
+
+.tb1, .tb2, .tb3, .tb4{
+    border-radius: 5px;
+    border: 1px solid;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+.tb2, .tb3, .tb4{
+    height: 120px;
+}
+
+.c1{
+    padding-left: 20px;
+    width: 100px;
+    
+}
+
+.c2{
+   width: 100px;
+
+}
+
+.c3{
+   width: 300px;
+}
+
+.c4{
+    width: 150px;
+    text-align: ;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+.c5{
+    width: 200px;
+    text-align: center;
+}
+
+/* Configuração do Rodapé */
+
+footer{
+    max-width: 970px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: rgb(143,161,170);
+    
+}
+
+/* Configurações de Efeito */
+
+img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+}
+
+ul li:hover{
+    background-color: rgb(30, 136, 229);
+    color: #fff;
+    transition: .7s; 
+}
+
+a:hover{
+    color: #fff;
+}
+
+button:hover{
+    background-color: rgb(30, 136, 229);
+    color: #fff;
+    transition: .7s;
+    border-radius: 6px;
+}
+
+
+/* Comandos Responsivos */
+
+@media (max-width: 1200px){
+    .cabecalho{
+        background-color: #fff;
+        width: 100%;
+        height: 100px;
+        box-shadow: 1px 2px 10px black;
+        box-sizing: border-box;
+        transition: 1.5s;
+    }
+    
+    figure{
+        margin: 0;
+    }
+    
+    img{
+        box-sizing: border-box;
+        margin-top: 10px;
+        margin-left: 20px;
+        text-align: left;
+        transition: 1s;
+        float: left;
+        height: 80px;
+    }
+    
+    ul li{
+        display: inline list-item;
+        margin: 0 auto;
+        padding: 10px;
+        margin-right: 10px;
+        
+    }
+    
+    .menu1, .menu2, .menu3{
+        margin-top: 30px;
+        float: left;
+        
+    }
+    
+    .menu1{
+        margin-left: 200px;
+    }
+
+    
+    .conteudo{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 1100px){
+    .menu1{
+        margin-left: 90px;
+        transition: 1.5s;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
