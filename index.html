@@ -36,82 +36,84 @@
                 </ul>
             </nav>
         </header>
-        <div class="conteudo">
-            <section>
-                <h1>Solicitações</h1>
 
-                <div class="botoes">
+        
+        <section class="conteudo">
+            <h1>Solicitações</h1>
 
-                    <button type="submit" name="btnListar" class="btn1"><i class="fas fa-bars"></i>  Abertos e Pendentes</button>
+            <div class="botoes">
+
+                <button type="submit" name="btnListar" class="btn1"><i class="fas fa-bars"></i>  Abertos e Pendentes</button>
+                
+                <form action="" method="get"></form>
+                    <div class="formPesquisa">
+                        <button type="submit" class="btnPesquisar"><i class="fas fa-search"></i></button>
+                        <input type="text" value="" placeholder="Pesquisar por Código ou Título">
+                    </div>
+                </form>
+
+                <button type="submit" name="btnCadastrar" class="btn2"><li><i class="fas fa-plus"></i>  Nova Solicitação</button>
+
+            </div>
+
+            <section class="lista">
+                
+                <table class="tb1">
+                    <tr class="linha1">
+                        <td class="c1"><i class="fas fa-arrow-up"></i>  Criação</td>
+                        <td class="c2"><i class="fas fa-arrow-up"></i>  Código</td>
+                        <td class="c3"><i class="fas fa-arrow-up"></i>  Título</td>
+                        <td class="c4"><i class="fas fa-arrow-up"></i>  Ordem de Serviço</td>
+                        <td class="c5"><i class="fas fa-arrow-up"></i>  Status</td>
+                    </tr>
                     
-                    <form action="" method="get"></form>
-                        <div class="formPesquisa">
-                            <button type="submit" class="btnPesquisar"><i class="fas fa-search"></i></button>
-                            <input type="text" value="" placeholder="Pesquisar por Código ou Título">
-                        </div>
-                    </form>
+                </table>
 
-                    <button type="submit" name="btnCadastrar" class="btn2"><li><i class="fas fa-plus"></i>  Nova Solicitação</button>
+                <table class="tb2">
+                    <tr class="linha2">
+                        <td class="c1">16/12/2020</td>
+                        <td class="c2">#0762</td>
+                        <td class="c3">Lorem ipsum dolor sit amet consectetur.</td>
+                        <td class="c4">
+                            <p>1 Deslocamento</p>
+                            <p>5 Em Andamento</p>
+                            <p>3 Finalizados</p>
+                        </td>
+                        <td class="c5">Aguardando Atendimento</td>
+                    </tr>
+                </table>
 
-                </div>
+                <table class="tb3">
+                    <tr class="linha3">
+                        <td class="c1">16/12/2020</td>
+                        <td class="c2">#0762</td>
+                        <td class="c3">Lorem ipsum dolor sit amet consectetur.</td>
+                        <td class="c4">6 Finalizado</td>
+                        <td class="c5">Aguardando Atendimento</td>
+                    </tr>
+                </table>
 
-                <section class="lista">
-                    
-                    <table class="tb1">
-                        <tr class="linha1">
-                            <td class="c1"><i class="fas fa-arrow-up"></i>  Criação</td>
-                            <td class="c2"><i class="fas fa-arrow-up"></i>  Código</td>
-                            <td class="c3"><i class="fas fa-arrow-up"></i>  Título</td>
-                            <td class="c4"><i class="fas fa-arrow-up"></i>  Ordem de Serviço</td>
-                            <td class="c5"><i class="fas fa-arrow-up"></i>  Status</td>
-                        </tr>
-                        
-                    </table>
+                <table class="tb4">
+                    <tr class="linha4">
+                        <td class="c1">16/12/2020</td>
+                        <td class="c2">#0762</td>
+                        <td class="c3">Lorem ipsum dolor sit amet consectetur.</td>
+                        <td class="c4">
+                            <p>1 Agendada</p>
+                            <p>2 Em Deslocamento</p>
+                            <p>4 em Andamento</p>
+                            <p>4 Finalizado</p>
+                        </td>
+                        <td class="c5">Aguardando Atendimento</td>
+                    </tr>
+                </table>
 
-                    <table class="tb2">
-                        <tr class="linha2">
-                            <td class="c1">16/12/2020</td>
-                            <td class="c2">#0762</td>
-                            <td class="c3">Lorem ipsum dolor sit amet consectetur.</td>
-                            <td class="c4">
-                                <p>1 Deslocamento</p>
-                                <p>5 Em Andamento</p>
-                                <p>3 Finalizados</p>
-                            </td>
-                            <td class="c5">Aguardando Atendimento</td>
-                        </tr>
-                    </table>
-
-                    <table class="tb3">
-                        <tr class="linha3">
-                            <td class="c1">16/12/2020</td>
-                            <td class="c2">#0762</td>
-                            <td class="c3">Lorem ipsum dolor sit amet consectetur.</td>
-                            <td class="c4">6 Finalizado</td>
-                            <td class="c5">Aguardando Atendimento</td>
-                        </tr>
-                    </table>
-
-                    <table class="tb4">
-                        <tr class="linha4">
-                            <td class="c1">16/12/2020</td>
-                            <td class="c2">#0762</td>
-                            <td class="c3">Lorem ipsum dolor sit amet consectetur.</td>
-                            <td class="c4">
-                                <p>1 Agendada</p>
-                                <p>2 Em Deslocamento</p>
-                                <p>4 em Andamento</p>
-                                <p>4 Finalizado</p>
-                            </td>
-                            <td class="c5">Aguardando Atendimento</td>
-                        </tr>
-                    </table>
-
-                </section>
-
-                <footer></footer>
             </section>
-        </div>
+
+            <footer>C 2021 Dev SA - Desenvolvido por Darlan Araujo</footer>
+            
+        </section>
+        
     </div>
 </body>
 </html>

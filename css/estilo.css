@@ -12,12 +12,12 @@
     text-decoration: none;
     list-style: none;
     list-style-type: none;
-    box-sizing: border-box;
+    box-sizing: border-box;    
 }
 
 .container{
     background-color: rgb(241,241,241);
-    height: 100vh;
+    height: 100vmax;
     
 }
 
@@ -25,7 +25,6 @@
 header{
     background-color: #fff;
     box-shadow: 1px 2px 10px;
-    border: 1px solid;
     width: 20%;
     height: 100vh;
     float: left;
@@ -61,6 +60,7 @@ ul li{
     line-height: 50px;
     color: rgb(62, 79, 89);
     cursor: pointer;
+    
 }
 
 i{
@@ -177,7 +177,14 @@ a:hover{
 
 @media (max-width: 1010px){
     nav ul li{
-        font-size: .7em
+        font-size: .8em;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    a, i{
+        padding: 2px;
+        
     }
 }
 
@@ -189,6 +196,8 @@ a:hover{
         margin-right: 40px;
         margin-top: 10px;
         cursor: pointer;
+        transition: 1s;
+  
     }
     
     ul{
@@ -220,7 +229,6 @@ a:hover{
         color: #fff;
         cursor: pointer;
         transition: 1s;
-        
         border-radius: 0;
     }
 
@@ -240,7 +248,6 @@ a:hover{
     box-sizing: border-box;
     float: left;
     width: 80%;
-    margin: 0 auto;
     
 }
 
@@ -253,18 +260,17 @@ h1{
 
 /* Configuração dos botões */
 
-.botoes, .lista{
+.botoes{
     box-sizing: border-box;
     margin-left: 50px;
     margin-left: 5%;
     margin-right: 5%;
-    width: 100%;
+    width: 90%;
     height: 100px;
-    
 }
 
-.botoes{
-    text-align: center;
+button i{
+    padding: 0;
 }
 
 
@@ -280,12 +286,14 @@ h1{
 }
 
 .btn1{
-    margin-left: 0px;
+    margin-left: 1%;
 }
 
 .btn2{
-    margin-left: 30px;
+    margin-left: 2%;
+    margin-right: 1%;
     margin-bottom: 40px;
+    
 }
 
 /* Configurando o formulário de Pesquisa */
@@ -295,8 +303,8 @@ h1{
     float: left;
     width: 32%;
     height: 60px;
-    margin-left: 160px;
-    border: 1px solid;
+    margin-left: 24%;
+    border: 1px solid rgb(143,161,170);
     border-radius: 8px;
     box-sizing: border-box;
 }
@@ -326,18 +334,20 @@ h1{
 
 .lista{
     clear: both;
-    width: 100%;
-    margin-left: 40px;
-    background-color: #fff;
+    width: 90%;
+    margin-left: 0;
+    
     box-sizing: border-box;
     padding-bottom: 90px;
     color: rgb(143,161,170);
     border: 1px solid;
     border-radius: 5px;
-    font-size: .9em
+    font-size: .9em;
+    margin: 0 auto;
 }
 
 .tb1, .tb2, .tb3, .tb4{
+    background-color: #fff;
     border-radius: 5px;
     border: 1px solid;
     width: 100%;
@@ -350,23 +360,23 @@ h1{
 }
 
 .c1{
-    padding-left: 20px;
-    width: 100px;
+    padding-left: 5px;
+    width: 15%;
     
 }
 
 .c2{
-   width: 100px;
+   width: 15%;
 
 }
 
 .c3{
-   width: 300px;
+   width: 35%;
 }
 
 .c4{
-    width: 150px;
-    text-align: ;
+    width: 15%;
+    text-align: center;
 }
 
 p{
@@ -374,18 +384,59 @@ p{
 }
 
 .c5{
-    width: 200px;
+    width: 20%;
     text-align: center;
 }
 
-/*Comandos Responsivo Cabeçalho*/
+/*Comandos de efeito Conteúdo*/
+button:hover{
+    background-color: rgb(30, 136, 229);
+    color: #fff;
+    transition: .7s;
+    border-radius: 6px;
+}
+
+/*Comandos Responsivo Conteúdo*/
 
 @media (max-width: 1200px){
     .conteudo{
+        background-color: rgb(241,241,241);
         width: 100%;
+        height: 100vh;
+        transition: 1s;
+    }
+
+    .lista{
+        padding-bottom: 0px;
     }
 }
 
+@media (max-width: 858px){
+
+    .btn1, .formPesquisa, .btn2{
+        width: 100%;
+        margin-top: 10px;
+        transition: 1s;
+    }
+
+    .formPesquisa, .btn2{
+        margin-left: 1%;
+    }
+
+    .tb1, .tb2, .tb3, .tb4{
+        font-size: .6em;
+    }
+
+}
 
 
+/*Comandos do Rodapé*/
+footer{
+    width: 100%;
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    color: rgb(143,161,170);
+    
+}
 
