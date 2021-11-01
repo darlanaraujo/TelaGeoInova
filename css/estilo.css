@@ -203,7 +203,6 @@ a:hover{
         margin-top: 10px;
         cursor: pointer;
         transition: 1s;
-  
     }
     
     ul{
@@ -409,7 +408,6 @@ button:hover{
     .conteudo{
         width: 100%;
         transition: 1s;
-        
     }
 
     .lista{
@@ -419,6 +417,10 @@ button:hover{
 }
 
 @media (max-width: 858px){
+
+    .conteudo{
+        height: 100vh;
+    }
 
     .btn1, .formPesquisa, .btn2{
         width: 100%;
@@ -435,7 +437,6 @@ button:hover{
     }
 
 }
-
 
 /*Comandos do Rodapé*/
 footer{
