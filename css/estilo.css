@@ -204,6 +204,14 @@ a:hover{
         cursor: pointer;
         transition: 1s;
     }
+
+    header{
+        position: fixed;
+    }
+
+    .conteudo{
+        margin-top: 120px;
+    }
     
     ul{
         position: fixed;
